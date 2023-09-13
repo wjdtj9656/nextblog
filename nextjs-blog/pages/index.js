@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
       </Head>
 
       <main>
+        {/* <img src="/images/image1.png" alt="해골" /> */}
+        <Image src="/images/image1.png" width={140} height={140} />
         <h1 className={styles.title}>
           READ THIS POST{" "}
           <Link href="/posts/first-post">
